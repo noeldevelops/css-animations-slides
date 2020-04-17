@@ -59,14 +59,16 @@ section > :last-child:not(.center) {
 #🏆 {  background: linear-gradient(to bottom, var(--g),var(--h)); color: var(--a);}
 #📚 {  background: var(--h); color: var(--a); }
 
-a {color: aquamarine;}
+a {color: aquamarine; transition: all 500ms ease-in-out;}
+a:hover, a:focus { color: orangered;}
 #👋 a, #❓ a { color: darkcyan;}
 
 /*** EXAMPLE LINK STYLES 📝***/
-a.example-link { margin: 0 auto; color: aquamarine;}
-a.example-link:hover, a.example-link:focus { color: orangered; }
-
-
+a.example-link { 
+    margin: 0 auto; 
+    color: aquamarine;
+}
+a.example-link:hover, a.example-link:focus { color: orangered;}
 
 /*** EXAMPLE BUTTON STYLES 🔘***/
 a.button { 
