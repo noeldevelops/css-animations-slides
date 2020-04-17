@@ -56,6 +56,7 @@ section > :last-child:not(.center) {
 #🗝 {  background: linear-gradient(to bottom, var(--f),var(--g)); color: var(--a);}
 #📚 {  background: linear-gradient( to bottom, var(--g),var(--h) ); color: var(--a); }
 a {color: aquamarine;}
+#👋 a, #❓ a { color: darkcyan;}
 
 /*** EXAMPLE LINK STYLES 📝***/
 a.example-link { color: aquamarine; margin: 0 auto;}
