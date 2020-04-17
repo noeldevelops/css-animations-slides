@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS Animations Ya'll</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="CSS,HTML,animations,developer,web,motion,design">
+    <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+        <text y=%22.9em%22 font-size=%2290%22>
+            🤩
+        </text>
+    </svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
+  </head>
+  <body>
+    <main>
+        <nav>
+            <a href="#👋" id="1" title="Hello, world!">👋</a>
+            <a href="#❓" id="2" title="Why CSS?">❓</a>
+            <a href="#🕺" id="3" title="Why animate?">🕺</a>
+            <a href="#💅" id="4" title="Easy Transitions">💅</a>
+            <a href="#🔥" id="5" title="More advanced">🔥‍</a>
+            <a href="#🗝" id="4" title="Keyframes">🗝</a>
+            <a href="#📚" id="6" title="Resources">📚</a>
+        </nav>
+        <section id="👋">
+            <div class="center">
+                <h1>Intro to CSS Animations</h1>
+                <p> <pre> <code class="language-xml"> <flash> Hello world! 👋</flash></code> </pre> </p>
+                <p>Noel Cothren 👾 @noeldevelops 👾 noelcothren@gmail.com</p>
+
+            </div>
+        </section>
+        <section id="❓">
+            <div class="center">
+                <h2>Why CSS? ❓</h2>
+                <h3>1. Simple, yet powerful.</h3>
+                <p>All the CSS ever written:
+                    <pre><code class="language-css">
+                    selector {
+                        property: value;
+                    }</code></pre>
+                    <a target="_blank" rel="noopener noreferrer" href="http://csszengarden.com/">CSS Zen Garden</a>
+                </p>
+                <h3>2. Performance</h3>
+                <p>CSS Animations are offloaded to GPU, so keep things off the main thread (Web Animations API does mimic this)</p>
+                <h3>3. Principle of Least Power</h3>
+            </div>
+        </section>
+        <section id="🕺">
+            <div class="center">
+                <h2>Q: Why Animate? 🕺</h2>
+                <h3>A:  Better UX.</h3>
+                <ul>
+                    <li>It's a communication aid.</li>
+                    <li>Users expect it.</li>
+                    <li>It builds your brand and your site's personality.</li>
+                </ul>
+                <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/devtips/pen/AXxGwO/">"Animating the Moments" by DevTips</a>
+            </div>
+        </section>
+        <section id="💅">
+            <h2>Easy, lazy animations</h2>
+            <p>Go from point A to point B using transitions & leverage browser's 🧠 to figure out the in-betweens. </p>
+            <p>Syntax:
+            <pre><code class="language-css"> transition: [property][duration][delay][easing] ... ;</code></pre> </p>
+            <p>We'll attach the change to <em>a change in the element's state.</em> Here's an example: </p>
+            <a href="#💅" class="example-link">Hover Me</a>
+            <pre><code class="language-css"> 
+                a.example-link { color: aquamarine; }
+                a.example-link:hover { color: orangered; }
+            </code></pre>
+            <p>Bonus: customize the easing using dev tools or a site like <a href="https://cubic-bezier.com">cubic-bezier.com</a></p>
+        </section>
+        <section id="🔥">
+            <h2>Make it Hot with Pseudo Elements</h2>
+            <h3>Now we're cookin' with gas 🔥</h3>
+            <a href="#🔥" class="button">Hot Button 💣</a>
+        </section>
+        <section id="🗝">
+            <h2>Keyframes for Complex Animations 🗝</h2>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">MDN Web Docs</a>
+                <pre>
+                    <code class="language-css">
+                        .animated {
+                            animation-name: bounce; /* from your keyframes */
+                            animation-duration: 4s; /* s or ms */
+                            animation-iteration-count: 10; /* infinite is an option */
+                            animation-direction: alternate; /* or normal */
+                            animation-timing-function: ease-in-out; /* remember cubic-beziers? */
+                            animation-fill-mode: forwards; /* or backwards, both, none */
+                            animation-delay: 2s; /* or ms */
+                        }
+                    </code>
+                </pre>          
+        </section>
+        <section id="📚">
+            <div class="center">
+                <h2>Resources 📚</h2>
+                <ul>
+                    <li>All things CSS Animation from <a href="https://cssanimation.rocks/">Donovan Hutchinson</a></li>
+                    <li>Motion in popular design systems: 
+                        <ul>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://material.io/design/motion/">Material</a></li>
+                            <li> <a target="_blank" rel="noopener noreferrer" href="https://www.carbondesignsystem.com/guidelines/motion/basics">Carbon</a> </li>
+                            <li> <a target="_blank" rel="noopener noreferrer" href="https://design-system.pluralsight.com/core/motion">Pluralsight</a> </li>
+                        </ul>
+                    </li>
+                    <li>Still the best article on CSS Animations Performance from <a target="_blank" rel="noopener noreferrer" href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/">HTML5 Rocks</a> </li>
+                    <li>Sarah Drasner's favorite CSS Animations on <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/collection/nmyMop/">Codepen.io</a></li>
+                    <li>HTML+CSS Slides and Emoji URLs by <a target="_blank" rel="noopener noreferrer" href="https://www.chenhuijing.com/blog/html-slides-without-frameworks/#%F0%9F%91%BE">Chen Hui Jing</a> </li>  
+                    <li>Emoji favicons and other cool CSS things by <a target="_blank" rel="noopener noreferrer" href="http://lea.verou.me/">Lea Verou</a></li>
+                    <li>Easy code snippets with syntax highlights by <a href="https://www.taniarascia.com/adding-syntax-highlighting-to-code-snippets/">Tania Rascia</a></li>
+                </ul>
+            </div> 
+        </section>
+      </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+      <script type="text/javascript" src="scripts.js" ></script>
+  </body>
+</html>
