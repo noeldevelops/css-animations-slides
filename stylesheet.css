@@ -56,7 +56,8 @@ section > :last-child:not(.center) {
 #💅 {  background: linear-gradient( to bottom, var(--d),var(--e) ); color: var(--a); }
 #🔥 {  background: linear-gradient(to bottom, var(--e),var(--f)); color: var(--a);}
 #🗝 {  background: linear-gradient(to bottom, var(--f),var(--g)); color: var(--a);}
-#📚 {  background: linear-gradient( to bottom, var(--g),var(--h) ); color: var(--a); }
+#🏆 {  background: linear-gradient(to bottom, var(--g),var(--h)); color: var(--a);}
+#📚 {  background: var(--h); color: var(--a); }
 
 a {color: aquamarine;}
 #👋 a, #❓ a { color: darkcyan;}
