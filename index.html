@@ -76,8 +76,8 @@
             <p>We'll attach the change to <em>a change in the element's state.</em> Here's an example: </p>
             <a href="#💅" class="example-link">Hover Me</a>
             <pre><code class="language-css"> 
-                a.example-link { color: aquamarine; }
-                a.example-link:hover { color: orangered; }
+        a.example-link { color: aquamarine; }
+        a.example-link:hover { color: orangered; }
             </code></pre>
             <p>Ease-y upgrade: customize the timing function using dev tools or a site like <a target="_blank" rel="noopener noreferrer" href="https://cubic-bezier.com">cubic-bezier.com</a> or <a href="https://easings.net/">easings.net</a></p>
         </section>
@@ -86,27 +86,32 @@
             <h3>Now we're cookin' with gas 🔥</h3>
             <a href="#🔥" class="button">Hot Button 💣</a>
             <p>Hey -  don't put important content in a pseudo element! It's not real, it's pseudo.</p>
+            <p>Syntax ( two colons is modern :: ) </p>
+            <pre><code class="language-css">
+.button:hover::before {targets before pseudo element on hover}
+.item:hover .info {targets element with .info class when you hover on .item}
+            </code></pre>
         </section>
         <section id="🗝">
             <h2>Keyframes for Complex Animations 🗝</h2>
             <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">MDN Web Docs</a>
                 <pre>
                     <code class="language-css">
-                        .animated {
-                            animation-name: bounce; /* from your keyframes */
-                            animation-duration: 4s; /* s or ms */
-                            animation-iteration-count: 10; /* infinite is an option */
-                            animation-direction: alternate; /* or normal */
-                            animation-timing-function: ease-in-out; /* remember cubic-beziers? */
-                            animation-fill-mode: forwards; /* or backwards, both, none */
-                            animation-delay: 2s; /* or ms */
-                        }
+    .animated {
+        animation-name: bounce; /* from your keyframes */
+        animation-duration: 4s; /* s or ms */
+        animation-iteration-count: 10; /* infinite is an option */
+        animation-direction: alternate; /* or normal */
+        animation-timing-function: ease-in-out; /* remember cubic-beziers? */
+        animation-fill-mode: forwards; /* or backwards, both, none */
+        animation-delay: 2s; /* or ms */
+    }
 
-                        .animated {   
-                            animation: duration | timing-function | delay | 
-                            iteration-count | direction | fill-mode | 
-                            play-state | name;
-                        }
+    .animated {   
+        animation: duration | timing-function | delay | 
+        iteration-count | direction | fill-mode | 
+        play-state | name;
+    }
                     </code>
                 </pre>          
         </section>
