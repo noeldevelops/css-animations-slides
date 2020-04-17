@@ -14,8 +14,8 @@
         </text>
     </svg>">
     <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
   </head>
   <body>
     <main>
@@ -33,7 +33,7 @@
                 <h1>Intro to CSS Animations</h1>
                 <p> <pre> <code class="language-xml"> <flash> Hello world! 👋</flash> </code> </pre> </p>
                 <p>Noel Cothren 👾 @noeldevelops 👾 noelcothren@gmail.com</p>
-                <a href="https://github.com/noeldevelops/css-animations-slides">https://github.com/noeldevelops/css-animations-slides</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/noeldevelops/css-animations-slides">https://github.com/noeldevelops/css-animations-slides</a>
             </div>
         </section>
         <section id="❓">
@@ -45,23 +45,27 @@
                     selector {
                         property: value;
                     }</code></pre>
-                    <a target="_blank" rel="noopener noreferrer" href="http://csszengarden.com/">CSS Zen Garden</a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://csszengarden.com/">CSS Zen Garden</a> <br>
+                    <a target="_blank" rel="noopener noreferrer" href="https://resilientwebdesign.com/chapter2/#amatterofstyle">Resilient Web Design</a>
                 </p>
                 <h3>2. Performance</h3>
-                <p>CSS Animations are offloaded to GPU, so keep things off the main thread (Web Animations API does mimic this)</p>
+                <p>CSS Animations are offloaded to GPU, so keep things off the main thread (Web Animations API does mimic this).    <a target="_blank" rel="noopener noreferrer" href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/"><blockquote>"Modern browsers can animate four things really cheaply: <strong>position, scale, rotation and opacity</strong>."</blockquote></a>
+                </p>
                 <h3>3. Principle of Least Power</h3>
             </div>
         </section>
         <section id="🕺">
             <div class="center">
                 <h2>Q: Why Animate? 🕺</h2>
-                <h3>A:  Better UX.</h3>
+                <h3>A: Better UX.</h3>
                 <ul>
                     <li>It's a communication aid.</li>
                     <li>Users expect it.</li>
                     <li>It builds your brand and your site's personality.</li>
                 </ul>
                 <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/devtips/pen/AXxGwO/">"Animating the Moments" by DevTips</a>
+                <blockquote>"Animated user interfaces can be powerful — so powerful that they offer a competitive advantage to their products, regardless of platform." <a href="http://rachelnabors.com/">Rachel Nabors</a>
+                </blockquote>
             </div>
         </section>
         <section id="💅">
@@ -75,16 +79,17 @@
                 a.example-link { color: aquamarine; }
                 a.example-link:hover { color: orangered; }
             </code></pre>
-            <p>Bonus: customize the easing using dev tools or a site like <a href="https://cubic-bezier.com">cubic-bezier.com</a></p>
+            <p>Ease-y upgrade: customize the timing function using dev tools or a site like <a target="_blank" rel="noopener noreferrer" href="https://cubic-bezier.com">cubic-bezier.com</a> or <a href="https://easings.net/">easings.net</a></p>
         </section>
         <section id="🔥">
             <h2>Make it Hot with Pseudo Elements</h2>
             <h3>Now we're cookin' with gas 🔥</h3>
             <a href="#🔥" class="button">Hot Button 💣</a>
+            <p>Hey -  don't put important content in a pseudo element! It's not real, it's pseudo.</p>
         </section>
         <section id="🗝">
             <h2>Keyframes for Complex Animations 🗝</h2>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">MDN Web Docs</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">MDN Web Docs</a>
                 <pre>
                     <code class="language-css">
                         .animated {
@@ -96,6 +101,12 @@
                             animation-fill-mode: forwards; /* or backwards, both, none */
                             animation-delay: 2s; /* or ms */
                         }
+
+                        .animated {   
+                            animation: duration | timing-function | delay | 
+                            iteration-count | direction | fill-mode | 
+                            play-state | name;
+                        }
                     </code>
                 </pre>          
         </section>
@@ -103,7 +114,7 @@
             <div class="center">
                 <h2>Resources 📚</h2>
                 <ul>
-                    <li>All things CSS Animation from <a href="https://cssanimation.rocks/">Donovan Hutchinson</a></li>
+                    <li>All things CSS Animation from <a target="_blank" rel="noopener noreferrer" href="https://cssanimation.rocks/">Donovan Hutchinson</a></li>
                     <li>Motion in popular design systems: 
                         <ul>
                             <li><a target="_blank" rel="noopener noreferrer" href="https://material.io/design/motion/">Material</a></li>
