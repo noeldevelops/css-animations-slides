@@ -3,7 +3,7 @@
 }
 :root {
   font-size: 20px;
-  font-family: "Cousine", monospace;
+  font-family: "Newsreader", serif;
   line-height: 1.25;
   --a: #f8f8f8;
   --b: #dfdedd;
@@ -13,6 +13,7 @@
   --f: #423e3d;
   --g: #302c2c;
   --h: #0c0b0b;
+  --i: #000000;
 }
 body {
   margin: 0;
@@ -59,7 +60,7 @@ section > :last-child:not(.center) {
 #🥰 {
   background: linear-gradient(to bottom, var(--b), var(--c));
 }
-#😫 {
+#😈 {
   background: linear-gradient(to bottom, var(--c), var(--d));
 }
 #💅 {
@@ -83,7 +84,7 @@ section > :last-child:not(.center) {
   color: var(--a);
 }
 #📚 {
-  background: var(--h);
+  background: var(--i);
   color: var(--a);
 }
 blockquote {
@@ -97,7 +98,7 @@ blockquote cite {
 }
 a {
   color: aquamarine;
-  transition: all 500ms ease-in-out;
+  transition: all 250ms ease-in;
 }
 a:hover,
 a:focus {
@@ -107,83 +108,40 @@ a:focus {
 #🥰 a,
 blockquote a {
   color: darkcyan;
+  transition: all 250ms ease-in;
 }
-
-/*** EXAMPLE LINK STYLES 📝***/
-a.example-link {
-  margin: 0 auto;
-  color: aquamarine;
-}
-a.example-link:hover,
-a.example-link:focus {
+#👋 a:hover,
+#🥰 a:hover,
+blockquote a:hover {
   color: orangered;
-}
-
-/*** EXAMPLE BUTTON STYLES 🔘***/
-a.button {
-  margin: 0 auto;
-  padding: 1rem;
-  background: linear-gradient(135deg, var(--a), var(--c), var(--b));
-  color: var(--f);
-  text-decoration: none;
-}
-
-.glowy {
-  box-shadow: inset 0 0 20px transparent, 0 0 20px transparent;
-  text-shadow: 1px 1px 2px transparent;
-  transition: all 1250ms 100ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.glowy:hover {
-  box-shadow: inset 0 0 20px var(--a), 0 0 20px #ffef34;
-  text-shadow: 1px 1px 2px #ffef34;
-}
-
-.shiny {
-  position: relative;
-  overflow: hidden;
-}
-
-.shiny::after {
-  content: "";
-  position: absolute;
-  left: -75%;
-  top: -50px;
-  width: 60px;
-  height: 175px;
-  background: rgba(255, 255, 255, 0.75);
-  opacity: 0.5;
-  transform: rotate(35deg);
-  transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.shiny:hover::after {
-  left: 120%;
 }
 
 nav a {
   animation: 1s ease-in-out 100ms fade-slide-down;
 }
 nav a:nth-child(2) {
-  animation: 1s ease-in-out 200ms fade-slide-down;
+  animation: 1s ease-in-out 150ms fade-slide-down;
 }
 nav a:nth-child(3) {
-  animation: 1s ease-in-out 300ms fade-slide-down;
+  animation: 1s ease-in-out 200ms fade-slide-down;
 }
 nav a:nth-child(4) {
-  animation: 1s ease-in-out 400ms fade-slide-down;
+  animation: 1s ease-in-out 250ms fade-slide-down;
 }
 nav a:nth-child(5) {
-  animation: 1s ease-in-out 500ms fade-slide-down;
+  animation: 1s ease-in-out 300ms fade-slide-down;
 }
 nav a:nth-child(6) {
-  animation: 1s ease-in-out 600ms fade-slide-down;
+  animation: 1s ease-in-out 350ms fade-slide-down;
 }
 nav a:nth-child(7) {
-  animation: 1s ease-in-out 700ms fade-slide-down;
+  animation: 1s ease-in-out 400ms fade-slide-down;
 }
 nav a:nth-child(8) {
-  animation: 1s ease-in-out 800ms fade-slide-down;
+  animation: 1s ease-in-out 450ms fade-slide-down;
+}
+nav a:nth-child(9) {
+  animation: 1s ease-in-out 500ms fade-slide-down;
 }
 
 @keyframes fade-slide-down {
