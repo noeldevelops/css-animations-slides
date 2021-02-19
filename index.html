@@ -49,6 +49,10 @@
                     }</code></pre>
                 </p>
                 <p>CSS has a simple syntax & the properties tend to be human-readable. Yet it's so powerful! <a target="_blank" rel="noopener noreferrer" href="http://csszengarden.com/">CSS Zen Garden</a> is a great example.</p>
+                <pre><code class="language-css">
+                    a {
+                        color: aquamarine;
+                    }</code></pre>
             </div>
         </section>
         <section id="😈">
@@ -57,12 +61,16 @@
                 <blockquote cite="https://timseverien.com/posts/2020-12-06-what-makes-css-hard-to-master/">"It’s fairly common for software engineers to complain about CSS. Interestingly enough, that portion of the web development community also thinks CSS is easy."<br> <cite>(From <a target="_blank" rel="noopener noreferrer" href="https://timseverien.com/posts/2020-12-06-what-makes-css-hard-to-master/">"What makes CSS hard to master"</a> by Tim Severien)</cite>
                 </blockquote>
                 <h3>1. Everything is interrelated.</h3>
+                <p>Cascading, specificity, property sets, oh my!</p>
                 <h3>2. It's fail-proof!</h3>
-                <h3>3. Browsers and the evolution of the language</h3>
+                <p>"There are a heaps of these [common] 'bugs'. They aren’t actually bugs, merely a developers lack of understanding as to what the browser is doing. More correctly; what your CSS code is telling the browser to do." <a href="https://benfrain.com/debugging-css/">Ben Frain</a></p>
+                <h3>3. Browsers are different and the language is constantly evolving</h3>
+                <p>In order to write good CSS, you have to know which browsers support which features, and when to use hacks or fallbacks. This requires both knowledge and experience. <a href="https://caniuse.com" target="_blank" rel="noopener noreferrer">Can I Use?</a> is a good starting point.</p>
             </div>
         </section>
         <section id="💅">
             <h2>How can you write better CSS, more easily? 💅</h2>
+            <p>If you take CSS seriously you can do some amazing things with it, which is very satisfying because the syntax is super easy to learn.</p>
             <ol>
                 <li><a href="#🧠">Leverage browser brain power 🧠</a></li>
                 <li><a href="#🌍">Think globally 🌍</a></li>
@@ -74,33 +82,54 @@
             <h2>Leverage the browser's brain power 🧠</h2>
             <blockquote cite="https://every-layout.dev/">"If you find yourself wrestling with CSS layout, it’s likely you’re making decisions for browsers they should be making themselves."<br> <cite>(From <a target="_blank" rel="noopener noreferrer" href="https://every-layout.dev/">Every Layout</a>)</cite>
             </blockquote>
-            <pre><code class="language-css"> transition: [property][duration][delay][easing] ... ;</code></pre> </p>
+            <p></p>
+            <pre><code class="language-css"> 
+                🚫 Don't write this in your CSS! 🚫
+                width: 500px;</code></pre> </p>
         </section>
         <section id="🌍">
             <h2>Think globally 🌍</h2>
-            <p>Hey -  don't put important content in a pseudo element! It's not real, it's pseudo.</p>
-            <p>Syntax ( two colons is modern :: ) </p>
+            <p>Remember the cascade? It's there to make you more efficient! It is much easier to write styles that apply to many elements first, then add more specific overrides as you need them.</p>
+            <p>Here are some of the first rules in the stylesheet for this slide deck:</p>
             <pre><code class="language-css">
-                .button:hover::before {targets before pseudo element on hover}
-                .item:hover .info {targets element with .info class when you hover on .item}
+                  * {
+                    box-sizing: border-box;
+                  }
+                  :root {
+                    font-size: 20px;
+                    font-family: "Newsreader", serif;
+                  }
             </code></pre>
         </section>
         <section id="📋">
             <h2>Stay Organized 📋</h2>
-            <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">MDN Web Docs</a>     
+            <pre><code class="language-css">
+                /**********************/ 
+                /* Navigation Styles */
+                /**********************/
+                nav {
+                  display: flex;
+                .....
+                /**********************/ 
+                /* Button Styles */
+                /**********************/
+                a.button {
+                  margin: 0 auto;
+                  padding: 0.5em;
+                  font-size: 20px;
+                  font-family: "Newsreader", serif;
+                ....
+          </code></pre>
         </section>
         <section id="🧰">
             <div class="center">
                 <h2>Use tools 🧰</h2>
                 <ol>
-                    <li>Don't abuse your animation powers - only write animations that are necessary and useful to our users</li>
-                    <li>Don't conflict with users expectations (e.g. a banking form that "bounces" will be distrusted)</li>
-                    <li>"Performance and accessibility goals affect all aspects of our design work, and animation is no exception there." <a href="https://www.smashingmagazine.com/2019/02/animation-design-system/">Val Head for Smashing Magazine</a>
-                    </li>
-                    <ul>
-                        <li>Avoid animating properties that will trigger layout or paints.</li>
-                        <li>Make sure your animations aren't disturbing users with vestibular disorders or low motion preferences. <a href="https://web.dev/prefers-reduced-motion/">"Prefers reduced motion"</a> media query in Chrome 74</li>
-                    </ul>
+                    <li>Become a pro at using browsers' dev tools. <a href="https://www.codecademy.com/articles/use-devtools" target="_blank" rel="noopener noreferrer">Here's a start.</a></li>
+                    <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">Codepen.io</a> is great for testing and experimenting with zero setup.</li>
+                    <li>Organizational "methodologies" such as BEM, SMACSS, <a href="https://www.freecodecamp.org/news/managing-large-s-css-projects-using-the-inverted-triangle-architecture-3c03e4b1e6df/" target="_blank" rel="noopener noreferrer">ITCSS</a>, <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">atomic design</a></li>
+                    <li>Pre-processors - <a href="https://codepen.io/sasstantrum/post/intro-to-sass" target="_blank" rel="noopener noreferrer">SCSS/SASS</a>, LESS</li>
+                    <li>Post-processors - <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a></li>
                 </ol>
             </div>
         </section>
@@ -117,6 +146,8 @@
                             <li><a href="https://csswizardry.com/" target="_blank" rel="noopener noreferrer">Harry at CSS Wizardry</a></li>
                         </ul>
                     </li>
+                    <li>Use the <a href="https://autoprefixer.github.io/" target="_blank" rel="noopener noreferrer">Autoprefixer tool</a> without a build process </li>
+                    <li><a href="https://benfrain.com/debugging-css/" target="_blank" rel="noopener noreferrer">Debugging CSS</a> by Ben Frain, an older article but still good advice</li>
                     <li> <a target="_blank" rel="noopener noreferrer" href="https://resilientwebdesign.com/chapter2/#amatterofstyle">Resilient Web Design</a></li>
                     <li>HTML+CSS Slides and Emoji URLs by <a target="_blank" rel="noopener noreferrer" href="https://www.chenhuijing.com/blog/html-slides-without-frameworks/#%F0%9F%91%BE">Chen Hui Jing</a> </li>
                     <li>The technical details of <a href="https://www.w3.org/TR/CSS2/cascade.html#cascade">the cascade and specificity from W3C</a></li>

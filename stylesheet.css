@@ -18,6 +18,25 @@
 body {
   margin: 0;
 }
+a {
+  color: aquamarine;
+  transition: all 250ms ease-in;
+}
+a:hover,
+a:focus {
+  color: orangered;
+}
+#👋 a,
+#🥰 a,
+blockquote a {
+  color: darkcyan;
+  transition: all 250ms ease-in;
+}
+#👋 a:hover,
+#🥰 a:hover,
+blockquote a:hover {
+  color: orangered;
+}
 nav {
   position: fixed;
   display: flex;
@@ -31,6 +50,9 @@ nav a {
   border-radius: 5px;
   box-shadow: 2px 2px 4px black, inset 1px 1px 2px whitesmoke;
 }
+code {
+  font-size: small;
+}
 section {
   min-height: 100vh;
   display: flex;
@@ -39,8 +61,8 @@ section {
   padding: 1rem;
 }
 section > * {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 section > :first-child:not(.center) {
   margin-top: 0;
@@ -62,6 +84,7 @@ section > :last-child:not(.center) {
 }
 #😈 {
   background: linear-gradient(to bottom, var(--c), var(--d));
+  color: #000000;
 }
 #💅 {
   background: linear-gradient(to bottom, var(--d), var(--e));
@@ -80,7 +103,7 @@ section > :last-child:not(.center) {
   color: var(--a);
 }
 #🧰 {
-  background: linear-gradient(to bottom, var(--g), var(--h));
+  background: linear-gradient(to bottom, var(--h), var(--i));
   color: var(--a);
 }
 #📚 {
@@ -95,25 +118,6 @@ blockquote {
 blockquote cite {
   padding-top: 0.5em;
   font-size: 0.8em;
-}
-a {
-  color: aquamarine;
-  transition: all 250ms ease-in;
-}
-a:hover,
-a:focus {
-  color: orangered;
-}
-#👋 a,
-#🥰 a,
-blockquote a {
-  color: darkcyan;
-  transition: all 250ms ease-in;
-}
-#👋 a:hover,
-#🥰 a:hover,
-blockquote a:hover {
-  color: orangered;
 }
 
 nav a {
