@@ -4,4 +4,4 @@ Hey! this slide deck was thrown together quickly with very little concern for br
 
 ## Best if viewed in the latest browsers (no IE!)
 
-# (View Live at css-is-awesome.netlify.app)[https://css-is-awesome.netlify.app/]
+## Live at https://css-is-awesome.netlify.app/
