@@ -17,10 +17,22 @@
 }
 body {
   margin: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--a),
+    var(--b),
+    var(--c),
+    var(--d),
+    var(--e),
+    var(--f),
+    var(--g),
+    var(--h),
+    var(--i)
+  );
 }
 a {
   color: aquamarine;
-  transition: all 250ms ease-in;
+  transition: color 250ms ease-in;
 }
 a:hover,
 a:focus {
@@ -30,7 +42,7 @@ a:focus {
 #🥰 a,
 blockquote a {
   color: darkcyan;
-  transition: all 250ms ease-in;
+  transition: color 250ms ease-in;
 }
 #👋 a:hover,
 #🥰 a:hover,
@@ -64,6 +76,9 @@ section > * {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+section:nth-child(n + 5) {
+  color: var(--a);
+}
 section > :first-child:not(.center) {
   margin-top: 0;
 }
@@ -76,40 +91,6 @@ section > :last-child:not(.center) {
   margin-bottom: auto;
 }
 
-#👋 {
-  background: linear-gradient(to bottom, var(--a), var(--b));
-}
-#🥰 {
-  background: linear-gradient(to bottom, var(--b), var(--c));
-}
-#😈 {
-  background: linear-gradient(to bottom, var(--c), var(--d));
-  color: #000000;
-}
-#💅 {
-  background: linear-gradient(to bottom, var(--d), var(--e));
-  color: var(--a);
-}
-#🧠 {
-  background: linear-gradient(to bottom, var(--e), var(--f));
-  color: var(--a);
-}
-#🌍 {
-  background: linear-gradient(to bottom, var(--f), var(--g));
-  color: var(--a);
-}
-#📋 {
-  background: linear-gradient(to bottom, var(--g), var(--h));
-  color: var(--a);
-}
-#🧰 {
-  background: linear-gradient(to bottom, var(--h), var(--i));
-  color: var(--a);
-}
-#📚 {
-  background: var(--i);
-  color: var(--a);
-}
 blockquote {
   background-color: var(--a);
   color: var(--h);
