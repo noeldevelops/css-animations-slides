@@ -90,14 +90,15 @@
         <section id="🌍">
             <h2>Think globally 🌍</h2>
             <p>Remember the cascade? It's there to make you more efficient! It is much easier to write styles that apply to many elements first, then add more specific overrides as you need them.</p>
-            <p>Here are some of the first rules in the stylesheet for this slide deck:</p>
+            <p>For example, the link tag. Start with a generic element, then get more specific:</p>
             <pre><code class="language-css">
-                  * {
-                    box-sizing: border-box;
+                  a {
+                    color: aquamarine;
                   }
-                  :root {
-                    font-size: 20px;
-                    font-family: "Newsreader", serif;
+                  a.button {
+                    border: 2px;
+                    padding: 1em;
+                    color: red;
                   }
             </code></pre>
         </section>
