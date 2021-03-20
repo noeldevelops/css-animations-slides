@@ -1,7 +1,7 @@
-# CSS is Awesome
+# CSS is Awesome ~ Rubber Ducks version
 
 Hey! this slide deck was thrown together quickly with very little concern for browser compatibility and only a basic consideration for accessibility. You should not be using this code in production!
 
-## Best if viewed in the latest browsers (no IE!)
+## Best if viewed in the latest browsers (no IE)
 
-## Live at https://css-is-awesome.netlify.app/
+## Live at https://css-rubber-ducks.netlify.app/
