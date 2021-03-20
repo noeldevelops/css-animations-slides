@@ -14,6 +14,7 @@
   --g: #302c2c;
   --h: #0c0b0b;
   --i: #000000;
+  --curve: cubic-bezier(0.54, 0.11, 0.46, 1.19);
 }
 body {
   margin: 0;
@@ -52,6 +53,7 @@ blockquote a:hover {
 nav {
   position: fixed;
   display: flex;
+  flex-wrap: wrap;
 }
 nav a {
   font-size: 1.5rem;
@@ -76,7 +78,7 @@ section > * {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-section:nth-child(n + 5) {
+section:nth-child(n + 6) {
   color: var(--a);
 }
 section > :first-child:not(.center) {
@@ -102,31 +104,34 @@ blockquote cite {
 }
 
 nav a {
-  animation: 1s ease-in-out 100ms fade-slide-down;
+  animation: 1s var(--curve) 50ms fade-slide-down;
 }
 nav a:nth-child(2) {
-  animation: 1s ease-in-out 150ms fade-slide-down;
+  animation: 1s var(--curve) 75ms fade-slide-down;
 }
 nav a:nth-child(3) {
-  animation: 1s ease-in-out 200ms fade-slide-down;
+  animation: 1s var(--curve) 125ms fade-slide-down;
 }
 nav a:nth-child(4) {
-  animation: 1s ease-in-out 250ms fade-slide-down;
+  animation: 1s var(--curve) 175ms fade-slide-down;
 }
 nav a:nth-child(5) {
-  animation: 1s ease-in-out 300ms fade-slide-down;
+  animation: 1s var(--curve) 225ms fade-slide-down;
 }
 nav a:nth-child(6) {
-  animation: 1s ease-in-out 350ms fade-slide-down;
+  animation: 1s var(--curve) 275ms fade-slide-down;
 }
 nav a:nth-child(7) {
-  animation: 1s ease-in-out 400ms fade-slide-down;
+  animation: 1s var(--curve) 325ms fade-slide-down;
 }
 nav a:nth-child(8) {
-  animation: 1s ease-in-out 450ms fade-slide-down;
+  animation: 1s var(--curve) 375ms fade-slide-down;
 }
 nav a:nth-child(9) {
-  animation: 1s ease-in-out 500ms fade-slide-down;
+  animation: 1s var(--curve) 425ms fade-slide-down;
+}
+nav a:nth-child(10) {
+  animation: 1s var(--curve) 475ms fade-slide-down;
 }
 
 @keyframes fade-slide-down {
