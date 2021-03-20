@@ -134,6 +134,9 @@ nav a:nth-child(9) {
 nav a:nth-child(10) {
   animation: 1s var(--curve) 475ms fade-slide-down;
 }
+nav a:nth-child(11) {
+  animation: 1s var(--curve) 525ms fade-slide-down;
+}
 
 @keyframes fade-slide-down {
   0% {
@@ -147,5 +150,19 @@ nav a:nth-child(10) {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

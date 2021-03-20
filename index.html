@@ -30,7 +30,8 @@
             <a href="#🌍" id="7" title="Think globally">🌍</a>
             <a href="#📋" id="8" title="Stay organized">📋</a>
             <a href="#🧰" id="9" title="Use tools">🧰</a>
-            <a href="#📚" id="10" title="Resources">📚</a>
+            <a href="#🎨" id="10" title="Get creative!">🎨</a>
+            <a href="#📚" id="11" title="Resources">📚</a>
         </nav>
         <section id="👋">
             <div class="center">
@@ -74,7 +75,17 @@
                 ">An elegant system, far more powerful than any framework, designed for the realities of a flexible, multilingual, multi-device web.<br> <cite>(From <a target="_blank" rel="noopener noreferrer" href="https://www.rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/">"The way we talk about CSS"</a> by Rachel Andrew)</cite></blockquote>
 
                 <h3>1. Everything is interrelated.</h3>
-                <p>Cascading, specificity, property sets, oh my!</p>
+                <details>
+                    <summary>
+                        Cascading, specificity, property sets, oh my!
+                    </summary>
+                    <ul>
+                        <li>How does CSS decide which rules to use when the rules conflict?</li>
+                        <li>Which properties are inherited from their parents by default?</li>
+                        <li>Which properties are part of a set that goes together?</li>
+                        <li>Which properties depend on the DOM?</li>
+                    </ul>
+                </details>
                 <h3>2. It's fail-proof!</h3>
                 <p>"There are a heaps of these [common] 'bugs'. They aren’t actually bugs, merely a developers lack of understanding as to what the browser is doing. More correctly; what your CSS code is telling the browser to do." <a href="https://benfrain.com/debugging-css/">Ben Frain</a></p>
                 <h3>3. Browsers are different and the language is constantly evolving</h3>
@@ -93,11 +104,16 @@
         </section>
         <section id="🧠">
             <h2>Leverage the browser's brain power 🧠</h2>
+            <p>Especially when it comes to layouts…</p>
             <blockquote cite="https://every-layout.dev/">"If you find yourself wrestling with CSS layout, it’s likely you’re making decisions for browsers they should be making themselves."<br> <cite>(From <a target="_blank" rel="noopener noreferrer" href="https://every-layout.dev/">Every Layout</a>)</cite>
             </blockquote>
-            <p></p>
             <pre><code class="language-css">   🚫 Don't write this in your CSS! 🚫
     width: 500px;</code></pre> </p>
+            <blockquote cite="https://keithjgrant.com/posts/2018/06/resilient-declarative-contextual">"There are too many variables to consider. 
+                The point of CSS is to make it so you don’t have to worry about them all. 
+                Define some constraints. Let the language work out the details." 
+                <cite> <a href="https://keithjgrant.com/posts/2018/06/resilient-declarative-contextual/" target="_blank" rel="noopener noreferrer">- Keith Grant</a></cite>
+                </blockquote>
         </section>
         <section id="🌍">
             <h2>Think globally 🌍</h2>
@@ -133,6 +149,7 @@
         font-family: "Newsreader", serif;
     ....
           </code></pre>
+          <p>There are some great organizational "methodologies" such as BEM, SMACSS, <a href="https://www.freecodecamp.org/news/managing-large-s-css-projects-using-the-inverted-triangle-architecture-3c03e4b1e6df/" target="_blank" rel="noopener noreferrer">ITCSS</a>, <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">atomic design</a> as well.</p>
         </section>
         <section id="🧰">
             <div class="center">
@@ -141,11 +158,25 @@
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/HTML_and_CSS" target="_blank" rel="noopener noreferrer">Tools and tips for cross browser testing</a></li>
                     <li>Become a pro at using browsers' dev tools. <a href="https://www.codecademy.com/articles/use-devtools" target="_blank" rel="noopener noreferrer">Here's a start.</a></li>
                     <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">Codepen.io</a> is great for testing and experimenting with zero setup.</li>
-                    <li>Organizational "methodologies" such as BEM, SMACSS, <a href="https://www.freecodecamp.org/news/managing-large-s-css-projects-using-the-inverted-triangle-architecture-3c03e4b1e6df/" target="_blank" rel="noopener noreferrer">ITCSS</a>, <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">atomic design</a></li>
                     <li>Pre-processors - <a href="https://codepen.io/sasstantrum/post/intro-to-sass" target="_blank" rel="noopener noreferrer">SCSS/SASS</a>, LESS</li>
                     <li>Post-processors - <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a></li>
                 </ol>
             </div>
+        </section>
+        <section id="🎨">
+            <div class="center">
+                <h2>Get creative! 🎨</h2>
+                <p>Here are some resources to play with:</p>
+                <ul>
+                    <li><a href="https://www.transparenttextures.com/" target="_blank" rel="noopener noreferrer">Transparent Textures</a></li>
+                    <li><a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank" rel="noopener noreferrer">HTML Symbols</a></li>
+                    <li><a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank" rel="noopener noreferrer">Emoji List</a></li>
+                    <li> <a target="_blank" rel="noopener noreferrer" href="https://html-css-js.com/css/generator/">Old School CSS Generators</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://cssgradient.io/">CSS Gradient Generators</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://coolors.co/7b7554-17183b-a11692-ff4f79-ffb49a">Color Palette Generator</a></li>
+                    <li><a href="https://goofonts.com/" target="_blank" rel="noopener noreferrer">"GooFonts" - search Google fonts by 'personality'</a></li>
+                </ul>
+            </div> 
         </section>
         <section id="📚">
             <div class="center">
@@ -162,6 +193,7 @@
                             <li><a target="_blank" rel="noopener noreferrer" href="https://timseverien.com/posts/2020-12-06-what-makes-css-hard-to-master/">Tim Severien's "What makes CSS hard to master"</a> - the article that got me thinking about this topic</li>
                         </ul>
                     </li>
+                    <li>Lea Verou’s <a href="https://youtu.be/qm0IfG1GyZU" target="_blank" rel="noopener noreferrer">10 Modern Layouts in One Line</a> video</li>
                     <li>Use the <a href="https://autoprefixer.github.io/" target="_blank" rel="noopener noreferrer">Autoprefixer tool</a> without a build process </li>
                     <li><a href="https://benfrain.com/debugging-css/" target="_blank" rel="noopener noreferrer">Debugging CSS</a> by Ben Frain, an older article but still good advice</li>
                     <li> <a target="_blank" rel="noopener noreferrer" href="https://resilientwebdesign.com/">Resilient Web Design</a></li>
