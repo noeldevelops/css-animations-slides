@@ -53,7 +53,13 @@
                 <h2>What is CSS? 🧐</h2>
                 <p>Cascading...</p>
                 <p>Style...</p>
-                <p>Sheets..?</p>
+                <p>Sheets..</p>
+                <blockquote cite="https://www.rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/
+                ">An elegant system, far more powerful than any framework, designed for the realities of a flexible,
+                    multilingual, multi-device web.<br> <cite>(From <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/">"The
+                            way we talk about CSS"</a> by Rachel Andrew)</cite>
+                </blockquote>
             </div>
         </section>
         <section id="🥰">
@@ -75,12 +81,6 @@
         <section id="😈">
             <div class="center">
                 <h2>Why is CSS so hard? 😈</h2>
-                <blockquote cite="https://www.rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/
-                ">An elegant system, far more powerful than any framework, designed for the realities of a flexible,
-                    multilingual, multi-device web.<br> <cite>(From <a target="_blank" rel="noopener noreferrer"
-                            href="https://www.rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/">"The
-                            way we talk about CSS"</a> by Rachel Andrew)</cite></blockquote>
-
                 <blockquote cite="https://timseverien.com/posts/2020-12-06-what-makes-css-hard-to-master/">"It’s fairly
                     common for software engineers to complain about CSS. Interestingly enough, that portion of the web
                     development community also thinks CSS is easy."<br> <cite>(From <a target="_blank"
@@ -95,9 +95,10 @@
                     understanding as to what the browser is doing. More correctly; what your CSS code is telling the
                     browser to do." <a href="https://benfrain.com/debugging-css/">Ben Frain</a></p>
                 <h3>3. Browsers are different and the language is constantly evolving</h3>
-                <p>In order to write good CSS, you have to know which browsers support which features, and when to use
-                    hacks or fallbacks. This requires both knowledge and experience. <a href="https://caniuse.com"
-                        target="_blank" rel="noopener noreferrer">Can I Use?</a> is a good starting point.</p>
+                <p>In order to write great CSS, you have to know which browsers support which features, and when to use
+                    hacks or fallbacks. This requires both <b>knowledge</b> and <b>experience</b>. <a
+                        href="https://caniuse.com" target="_blank" rel="noopener noreferrer">Can I Use?</a> is a good
+                    starting point.</p>
             </div>
         </section>
         <section id="💅">
@@ -128,7 +129,7 @@
             <h2>Think globally 🌍</h2>
             <p>Remember the cascade? It's there to make you more efficient! It is much easier to write styles that apply
                 to many elements first, then add more specific overrides as you need them.</p>
-            <p>Here are some of the first rules in the stylesheet for this slide deck:</p>
+            <p>In this example, a button is a more specific style for a link:</p>
             <pre><code class="language-css">
     a {
     color: aquamarine;
@@ -142,6 +143,10 @@
         </section>
         <section id="📋">
             <h2>Stay Organized 📋</h2>
+            <p>If you can, keep styles organized with comment headers. If you're using CSS-in-JS this is often
+                automatic, since the styles live by their respecitve components. I also like to organize the styles
+                rules themselves within each block -- fonts styles together, layout styles together, etc. Maintenance
+                will be much easier!</p>
             <pre><code class="language-css">
     /**********************/ 
     /* Navigation Styles */
@@ -178,6 +183,9 @@
                             rel="noopener noreferrer">SCSS/SASS</a>, LESS</li>
                     <li>Post-processors - <a href="https://postcss.org/" target="_blank"
                             rel="noopener noreferrer">PostCSS</a></li>
+                    <li>CSS-in-JS - <a href="https://css-tricks.com/a-thorough-analysis-of-css-in-js/" target="_blank"
+                            rel="noopener noreferrer">CSS Tricks Analysis of CSS-in-JS Solutions</a>
+                    </li>
                 </ol>
             </div>
         </section>
