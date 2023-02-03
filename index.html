@@ -1,133 +1,191 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>CSS Animations Ya'll</title>
+    <title>CSS Rules</title>
     <meta name="author" content="Noel Cothren - noelcothren@gmail.com">
-    <meta name="description" content="Introduction to CSS Animations">
-    <meta name="keywords" content="CSS,HTML,animations,developer,web,motion,design">
+    <meta name="description" content="Introduction to CSS and Why It Rules">
+    <meta name="keywords" content="CSS,HTML,animations,developer,web,design">
     <link rel="icon" href="data:image/svg+xml,
     <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
         <text y=%22.9em%22 font-size=%2290%22>
             🤩
         </text>
     </svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
+    <link crossorigin="anonymous" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link crossorigin="anonymous" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  </head>
-  <body>
+</head>
+
+<body>
     <main>
         <nav>
             <a href="#👋" id="1" title="Hello, world!">👋</a>
-            <a href="#❓" id="2" title="Why CSS?">❓</a>
-            <a href="#🕺" id="3" title="Why animate?">🕺</a>
-            <a href="#💅" id="4" title="Easy Transitions">💅</a>
-            <a href="#🔥" id="5" title="More advanced">🔥‍</a>
-            <a href="#🗝" id="6" title="Keyframes">🗝</a>
-            <a href="#🏆" id="7" title="Best Practices">🏆</a>
-            <a href="#📚" id="8" title="Resources">📚</a>
+            <a href="#🧐" id="2" title="What is CSS?">🧐</a>
+            <a href="#🥰" id="3" title="CSS is easy!">🥰</a>
+            <a href="#😈" id="4" title="CSS is hard!">😈</a>
+            <a href="#💅" id="5" title="Write better CSS">💅</a>
+            <a href="#🧠" id="6" title="Use the browser">🧠‍</a>
+            <a href="#🌍" id="7" title="Think globally">🌍</a>
+            <a href="#📋" id="8" title="Stay organized">📋</a>
+            <a href="#🧰" id="9" title="Use tools">🧰</a>
+            <a href="#📚" id="10" title="Resources">📚</a>
         </nav>
         <section id="👋">
             <div class="center">
-                <h1>Intro to CSS Animations</h1>
-                <p> <pre> <code class="language-xml"> <flash> Hello world! 👋</flash> </code> </pre> </p>
-                <p>Noel Cothren 👾 @noeldevelops 👾 noelcothren@gmail.com</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/noeldevelops/css-animations-slides">https://github.com/noeldevelops/css-animations-slides</a>
+                <h1>CSS is Awesome</h1>
+                <p>
+                <pre> <code class="language-xml"> <flash> Hello world! 👋</flash> </code> </pre>
+                </p>
+                <p>Noel Cothren 👾 @noeldevelops 👾 noelcothren@gmail.com 👾 <a href="https://noeldevelops.com"
+                        target="_blank">noeldevelops.com</a></p>
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/noeldevelops/css-animations-slides/tree/fresh">Slide deck code</a>
             </div>
         </section>
-        <section id="❓">
+        <section id="🧐">
             <div class="center">
-                <h2>Why CSS? ❓</h2>
-                <h3>1. Simple, yet powerful.</h3>
-                <p>All the CSS ever written:
-                    <pre><code class="language-css">
-                    selector {
-                        property: value;
-                    }</code></pre>
-                    <a target="_blank" rel="noopener noreferrer" href="http://csszengarden.com/">CSS Zen Garden</a> <br>
-                    <a target="_blank" rel="noopener noreferrer" href="https://resilientwebdesign.com/chapter2/#amatterofstyle">Resilient Web Design</a>
-                </p>
-                <h3>2. Performance</h3>
-                <p>CSS Animations are offloaded to GPU, so keep things off the main thread (Web Animations API does mimic this).    <a target="_blank" rel="noopener noreferrer" href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/"><blockquote>"Modern browsers can animate four things really cheaply: <strong>position, scale, rotation and opacity</strong>."</blockquote></a>
-                </p>
-                <h3>3. Principle of Least Power</h3>
-            </div>
-        </section>
-        <section id="🕺">
-            <div class="center">
-                <h2>Q: Why Animate? 🕺</h2>
-                <h3>A: Better UX.</h3>
-                <ul>
-                    <li>It's a communication aid.</li>
-                    <li>Users expect it.</li>
-                    <li>It builds your brand and your site's personality.</li>
-                </ul>
-                <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/devtips/pen/AXxGwO/">"Animating the Moments" by DevTips</a>
-                <blockquote>"Animated user interfaces can be powerful — so powerful that they offer a competitive advantage to their products, regardless of platform." <a href="http://rachelnabors.com/">Rachel Nabors</a>
+                <h2>What is CSS? 🧐</h2>
+                <blockquote cite="https://www.rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/
+                ">An elegant system, far more powerful than any framework, designed for the realities of a flexible,
+                    multilingual, multi-device web.<br> <cite>(From <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/">"The
+                            way we talk about CSS"</a> by Rachel Andrew)</cite>
                 </blockquote>
+                <p>Cascading...</p>
+                <p>Style...</p>
+                <p>Sheets..</p>
+            </div>
+        </section>
+        <section id="🥰">
+            <div class="center">
+                <h2>Why is CSS so easy? 🥰</h2>
+                <p>All the CSS ever written (sorta):
+                <pre><code class="language-css">selector {
+    property: value;
+}</code></pre>
+                <pre><code class="language-css">a {
+    color: aquamarine;
+}</code></pre>
+                </p>
+                <p>CSS has a simple syntax & the properties tend to be human-readable. Yet it's so powerful!</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="http://csszengarden.com/">CSS Zen Garden</a> is a
+                    great example of the possibilities...so is the entire web!</p>
+            </div>
+        </section>
+        <section id="😈">
+            <div class="center">
+                <h2>Why is CSS so hard? 😈</h2>
+                <blockquote cite="https://timseverien.com/posts/2020-12-06-what-makes-css-hard-to-master/">"It’s fairly
+                    common for software engineers to complain about CSS. Interestingly enough, that portion of the web
+                    development community also thinks CSS is easy."<br> <cite>(From <a target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://timseverien.com/posts/2020-12-06-what-makes-css-hard-to-master/">"What makes
+                            CSS hard to master"</a> by Tim Severien)</cite>
+                </blockquote>
+                <h3>1. Everything is interrelated.</h3>
+                <p>Cascading, specificity, property sets, oh my!</p>
+                <h3>2. It's fail-proof!</h3>
+                <p>"There are a heaps of these [common] 'bugs'. They aren't actually bugs, merely a developers lack of
+                    understanding as to what the browser is doing. More correctly; what your CSS code is telling the
+                    browser to do." <a href="https://benfrain.com/debugging-css/">Ben Frain</a></p>
+                <h3>3. Browsers are different and the language is constantly evolving</h3>
+                <p>In order to write great CSS, you have to know which browsers support which features, and when to use
+                    hacks or fallbacks. This requires both <b>knowledge</b> and <b>experience</b>. <a
+                        href="https://caniuse.com" target="_blank" rel="noopener noreferrer">Can I Use?</a> is a good
+                    starting point.</p>
             </div>
         </section>
         <section id="💅">
-            <h2>Easy, lazy animations</h2>
-            <p>Go from point A to point B using transitions & leverage browser's 🧠 to figure out the in-betweens. </p>
-            <p>Syntax:
-            <pre><code class="language-css"> transition: [property][duration][delay][easing] ... ;</code></pre> </p>
-            <p>We'll attach the change to <em>a change in the element's state.</em> Here's an example: </p>
-            <a href="#💅" class="example-link">Hover Me</a>
+            <h2>How can you write better CSS, more easily? 💅</h2>
+            <p>If you take CSS seriously you can do some amazing things with it, which is very satisfying because the
+                syntax is super easy to learn.</p>
+            <ol>
+                <li><a href="#🧠">Leverage browser brain power 🧠</a></li>
+                <li><a href="#🌍">Think globally 🌍</a></li>
+                <li><a href="#📋">Stay organized 📋</a></li>
+                <li><a href="#🧰">Use tools 🧰</a></li>
+            </ol>
+        </section>
+        <section id="🧠">
+            <h2>Leverage the browser's brain power 🧠</h2>
+            <blockquote cite="https://every-layout.dev/">"If you find yourself wrestling with CSS layout, it's likely
+                you're making decisions for browsers they should be making themselves."<br> <cite>(From <a
+                        target="_blank" rel="noopener noreferrer" href="https://every-layout.dev/">Every
+                        Layout</a>)</cite>
+            </blockquote>
+            <p></p>
             <pre><code class="language-css"> 
-        a.example-link { color: aquamarine; }
-        a.example-link:hover { color: orangered; }
-            </code></pre>
-            <p>Ease-y upgrade: customize the timing function using dev tools or a site like <a target="_blank" rel="noopener noreferrer" href="https://cubic-bezier.com">cubic-bezier.com</a> or <a href="https://easings.net/">easings.net</a></p>
+                🚫 Be careful with explicit pixel sizes in your CSS! 🚫
+                width: 500px;</code></pre>
+            </p>
         </section>
-        <section id="🔥">
-            <h2>Make it Hot with Pseudo Elements</h2>
-            <h3>Now we're cookin' with gas 🔥</h3>
-            <a href="#🔥" class="button glowy shiny">Hot Button 💣</a>
-            <p>Hey -  don't put important content in a pseudo element! It's not real, it's pseudo.</p>
-            <p>Syntax ( two colons is modern :: ) </p>
+        <section id="🌍">
+            <h2>Think globally 🌍</h2>
+            <p>Remember the cascade? It's there to make you more efficient! It is much easier to write styles that apply
+                to many elements first, then add more specific overrides as you need them.</p>
+            <p>In this example, a button is a more specific style for a link:</p>
             <pre><code class="language-css">
-.button:hover::before {targets before pseudo element on hover}
-.item:hover .info {targets element with .info class when you hover on .item}
-            </code></pre>
-        </section>
-        <section id="🗝">
-            <h2>Keyframes for Complex Animations 🗝</h2>
-            <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">MDN Web Docs</a>
-                <pre>
-                    <code class="language-css">
-    .animated {
-        animation-name: bounce; /* from your keyframes */
-        animation-duration: 4s; /* s or ms */
-        animation-iteration-count: 10; /* infinite is an option */
-        animation-direction: alternate; /* or normal */
-        animation-timing-function: ease-in-out; /* remember cubic-beziers? */
-        animation-fill-mode: forwards; /* or backwards, both, none */
-        animation-delay: 2s; /* or ms */
+    a {
+    color: aquamarine;
     }
-
-    .animated {   
-        animation: duration | timing-function | delay | 
-        iteration-count | direction | fill-mode | 
-        play-state | name;
-    }
-                    </code>
-                </pre>          
+    
+    a.button {
+    border: 2px;
+    padding: 1em;
+    color: red;
+    }</code></pre>
         </section>
-        <section id="🏆">
+        <section id="📋">
+            <h2>Stay Organized 📋</h2>
+            <p>If you can, keep styles organized with comment headers. (If you're using CSS-in-JS this is often
+                automatic, since the styles live with their respective components.) I also like to organize the style
+                rules themselves within each block -- fonts styles together, layout styles together, etc. Maintenance
+                will be much easier!</p>
+            <pre><code class="language-css">
+    /**********************/ 
+    /* Navigation Styles */
+    /**********************/
+    nav {
+        display: flex;
+    .....
+    /**********************/ 
+    /* Button Styles */
+    /**********************/
+    a.button {
+        margin: 0 auto;
+        padding: 0.5em;
+        font-size: 20px;
+        font-family: "Newsreader", serif;
+    ....
+          </code></pre>
+        </section>
+        <section id="🧰">
             <div class="center">
-                <h2>A Few UI Animation Best Practices 🏆</h2>
+                <h2>Use tools 🧰</h2>
                 <ol>
-                    <li>Don't abuse your animation powers - only write animations that are necessary and useful to our users</li>
-                    <li>Don't conflict with users expectations (e.g. a banking form that "bounces" will be distrusted)</li>
-                    <li>"Performance and accessibility goals affect all aspects of our design work, and animation is no exception there." <a href="https://www.smashingmagazine.com/2019/02/animation-design-system/">Val Head for Smashing Magazine</a>
+                    <li>Become a pro at using browsers' dev tools. <a
+                            href="https://www.codecademy.com/articles/use-devtools" target="_blank"
+                            rel="noopener noreferrer">Here's a start.</a></li>
+                    <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">Codepen.io</a> is great
+                        for testing and experimenting with zero setup.</li>
+                    <li>Organizational "methodologies" such as BEM, SMACSS, <a
+                            href="https://www.freecodecamp.org/news/managing-large-s-css-projects-using-the-inverted-triangle-architecture-3c03e4b1e6df/"
+                            target="_blank" rel="noopener noreferrer">ITCSS</a>, <a
+                            href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank"
+                            rel="noopener noreferrer">atomic design</a></li>
+                    <li>Pre-processors - <a href="https://codepen.io/sasstantrum/post/intro-to-sass" target="_blank"
+                            rel="noopener noreferrer">SCSS/SASS</a>, LESS</li>
+                    <li>Post-processors - <a href="https://postcss.org/" target="_blank"
+                            rel="noopener noreferrer">PostCSS</a></li>
+                    <li>CSS-in-JS - <a href="https://css-tricks.com/a-thorough-analysis-of-css-in-js/" target="_blank"
+                            rel="noopener noreferrer">CSS Tricks Analysis of CSS-in-JS Solutions</a>
                     </li>
-                    <ul>
-                        <li>Avoid animating properties that will trigger layout or paints.</li>
-                        <li>Make sure your animations aren't disturbing users with vestibular disorders or low motion preferences. <a href="https://web.dev/prefers-reduced-motion/">"Prefers reduced motion"</a> media query in Chrome 74</li>
-                    </ul>
                 </ol>
             </div>
         </section>
@@ -135,25 +193,49 @@
             <div class="center">
                 <h2>Resources 📚</h2>
                 <ul>
-                    <li>All things CSS Animation from <a target="_blank" rel="noopener noreferrer" href="https://cssanimation.rocks/">Donovan Hutchinson</a></li>
-                    <li>Motion in popular design systems: 
+                    <li>Learn from the Masters
                         <ul>
-                            <li><a target="_blank" rel="noopener noreferrer" href="https://material.io/design/motion/">Material</a></li>
-                            <li> <a target="_blank" rel="noopener noreferrer" href="https://www.carbondesignsystem.com/guidelines/motion/basics">Carbon</a> </li>
-                            <li> <a target="_blank" rel="noopener noreferrer" href="https://design-system.pluralsight.com/core/motion">Pluralsight</a> </li>
+                            <li><a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.smashingmagazine.com/2019/01/how-to-learn-css/">Rachel Andrew on
+                                    how to learn CSS</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.joshwcomeau.com/css/the-importance-of-learning-css/">Josh Comeau
+                                    on the importance of learning CSS</a></li>
+                            <li><a href="https://every-layout.dev/" target="_blank" rel="noopener noreferrer">Every
+                                    Layout</a> by Heydon Pickering and Andy Bell</li>
+                            <li><a href="https://lea.verou.me/projects/" target="_blank" rel="noopener noreferrer">Lea
+                                    Verou</a> and her book <a href="https://youtu.be/dxY5CdZNzsk" target="_blank"
+                                    href="https://raw.githubusercontent.com/Jessinra/READING-general-programming-books/master/CSS_SVG/CSS%20Secrets%20-%20Lea%20Verou.pdf">CSS
+                                    Secrets</a></li>
+                            <li><a href="https://youtu.be/dxY5CdZNzsk" target="_blank" rel="noopener noreferrer">Laura
+                                    Schenck</a> talking about CSS algorithms</li>
+                            <li><a href="https://csswizardry.com/" target="_blank" rel="noopener noreferrer">Harry at
+                                    CSS Wizardry</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer"
+                                    href="https://timseverien.com/posts/2020-12-06-what-makes-css-hard-to-master/">Tim
+                                    Severien's "What makes CSS hard to master"</a> - the article that got me thinking
+                                about this topic</li>
                         </ul>
                     </li>
-                    <li>In Depth on Bezier Curves by <a href="https://www.smashingmagazine.com/2016/08/css-animations-motion-curves/">Smashing Mag</a></li>
-                    <li>Still the best article on CSS Animations Performance from <a target="_blank" rel="noopener noreferrer" href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/">HTML5 Rocks</a> </li>
-                    <li>Sarah Drasner's favorite CSS Animations on <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/collection/nmyMop/">Codepen.io</a></li>
-                    <li>HTML+CSS Slides and Emoji URLs by <a target="_blank" rel="noopener noreferrer" href="https://www.chenhuijing.com/blog/html-slides-without-frameworks/#%F0%9F%91%BE">Chen Hui Jing</a> </li>  
-                    <li>Emoji favicons and other cool CSS things by <a target="_blank" rel="noopener noreferrer" href="http://lea.verou.me/">Lea Verou</a></li>
-                    <li>Easy code snippets with syntax highlights by <a href="https://www.taniarascia.com/adding-syntax-highlighting-to-code-snippets/">Tania Rascia</a></li>
+                    <li>Use the <a href="https://autoprefixer.github.io/" target="_blank"
+                            rel="noopener noreferrer">Autoprefixer tool</a> without a build process </li>
+                    <li><a href="https://benfrain.com/debugging-css/" target="_blank"
+                            rel="noopener noreferrer">Debugging CSS</a> by Ben Frain, an older article but still good
+                        advice</li>
+                    <li> <a target="_blank" rel="noopener noreferrer" href="https://resilientwebdesign.com/">Resilient
+                            Web Design</a></li>
+                    <li>The technical details of <a target="_blank" rel="noopener noreferrer"
+                            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">the
+                            cascade and specificity from MDN</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                            href="https://noeldevelops.github.io/tools-resource-links/">My personal resource list</a> (a
+                        bit outdated but still some good stuff)</li>
                 </ul>
-            </div> 
+            </div>
         </section>
-      </main>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
-      <script type="text/javascript" src="scripts.js" ></script>
-  </body>
+    </main>
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
 </html>

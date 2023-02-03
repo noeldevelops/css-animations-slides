@@ -1,5 +1,7 @@
-# A Quick Introduction to CSS Animations
+# CSS is Awesome
 
-Note: this slide deck was thrown together quickly with ZERO concern for browser compatibility and only a basic consideration for accessibility. I will update it soon, but in the meantime you should not be using this code in production! 
+Hey! this slide deck was thrown together quickly with very little concern for browser compatibility and only a basic consideration for accessibility. You should not be using this code in production!
 
-## Best if viewed in the latest Chrome browser
+## Best if viewed in the latest browsers (no IE!)
+
+## Live at https://css-is-awesome.netlify.app/
